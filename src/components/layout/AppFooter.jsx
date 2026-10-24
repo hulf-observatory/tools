@@ -1,35 +1,19 @@
-import { Link } from 'react-router-dom';
-import { SITE_URL, SITE_NAV } from '../../lib/links';
+import { SITE_URL } from '../../lib/links';
 
-// Footer of the inner pages, as on the main site. On phones the cross-site nav sits here,
-// between the content and the footer (the header pills are desktop-only).
-export default function AppFooter({ current }) {
+// Footer bar shared by the Observatory's pages (visual standard, 24 Oct 2026): the feedback line and the
+// data licence, with Disclaimer at the right. The site links live in the header only.
+export default function AppFooter() {
   return (
-    <>
-      <div className="mobile-nav">
-        {SITE_NAV.map(({ key, label, href }) => (key === current ? (
-          <Link key={key} to="/" className="mobile-nav-link hover-hatch" aria-current="page">
-            <span className="hatch-bg-text">{label}</span>
-          </Link>
-        ) : (
-          <a key={key} href={href} rel="noopener" className="mobile-nav-link hover-hatch">
-            <span className="hatch-bg-text">{label}</span>
-          </a>
-        )))}
+    <footer className="obs-footer">
+      <div className="obs-footer-fine">
+        <span>
+          This website is under continuous development; you may find errors or incomplete content.
+          Feedback: <a href="mailto:hulf.observatory@gmail.com">hulf.observatory@gmail.com</a>
+          <span className="obs-footer-sep"> · </span>
+          Processing and metadata CC BY 4.0; each layer keeps its source's licence.
+        </span>
+        <a className="obs-footer-disclaimer" href={SITE_URL + '/disclaimer'}>Disclaimer</a>
       </div>
-
-      <footer className="app-footer">
-        <div className="footer-note solid-block">
-          This website is under continuous development. You may encounter errors or incomplete
-          content. Share your feedback at{' '}
-          <a href="mailto:hulf.observatory@gmail.com">hulf.observatory@gmail.com</a>
-        </div>
-        <div className="solid-block">
-          <a href={SITE_URL + '/disclaimer'} className="footer-disclaimer-link">
-            Disclaimer
-          </a>
-        </div>
-      </footer>
-    </>
+    </footer>
   );
 }
