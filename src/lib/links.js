@@ -6,16 +6,16 @@ const trim = (u) => u.replace(/\/$/, '');
 export const SITE_URL = trim(import.meta.env.VITE_SITE_URL || 'https://hyderabad.urbanobservatory.in');
 
 // Tools (this site's sibling / this site)
-export const TOOLS_URL = trim(import.meta.env.VITE_TOOLS_URL || 'https://tools.hyderabad.urbanobservatory.in') + '/';
+export const TOOLS_URL = trim(import.meta.env.VITE_TOOLS_URL || 'https://hyderabad.urbanobservatory.in/tools') + '/';
 
 // Stories & datasets
-export const STORIES_URL = trim(import.meta.env.VITE_STORIES_URL || 'https://stories.hyderabad.urbanobservatory.in') + '/';
+export const STORIES_URL = trim(import.meta.env.VITE_STORIES_URL || 'https://hyderabad.urbanobservatory.in/stories') + '/';
 
 // Spatial Data Repository (map viewer)
-export const MAPS_URL = trim(import.meta.env.VITE_MAPS_URL || 'https://maps.hyderabad.urbanobservatory.in');
+export const MAPS_URL = trim(import.meta.env.VITE_MAPS_URL || 'https://hyderabad.urbanobservatory.in/maps');
 
 // City Timeline (archive maps side by side); keeps its trailing slash: it is linked as-is
-export const TIMELINE_URL = trim(import.meta.env.VITE_TIMELINE_URL || 'https://timeline.hyderabad.urbanobservatory.in') + '/';
+export const TIMELINE_URL = trim(import.meta.env.VITE_TIMELINE_URL || 'https://hyderabad.urbanobservatory.in/timeline') + '/';
 
 // The open-data site (catalogue, downloads)
 export const DATA_URL = trim(import.meta.env.VITE_DATA_URL || 'https://data.hyderabad.urbanobservatory.in') + '/';

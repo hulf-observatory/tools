@@ -29,7 +29,7 @@ jobs:
       - run: npm run build
         env:
           # the site lives at the root of its custom subdomain
-          VITE_BASE: ${{ vars.VITE_BASE || '/' }}
+          VITE_BASE: ${{ vars.VITE_BASE || '/tools/' }}
           VITE_SITE_URL: ${{ vars.VITE_SITE_URL }}
           VITE_TOOLS_URL: ${{ vars.VITE_TOOLS_URL }}
           VITE_STORIES_URL: ${{ vars.VITE_STORIES_URL }}
