@@ -18,7 +18,7 @@ export const MAPS_URL = trim(import.meta.env.VITE_MAPS_URL || 'https://hyderabad
 export const TIMELINE_URL = trim(import.meta.env.VITE_TIMELINE_URL || 'https://hyderabad.urbanobservatory.in/timeline') + '/';
 
 // The open-data site (catalogue, downloads)
-export const DATA_URL = trim(import.meta.env.VITE_DATA_URL || 'https://data.hyderabad.urbanobservatory.in') + '/';
+export const DATA_URL = trim(import.meta.env.VITE_DATA_URL || 'https://hyderabad.urbanobservatory.in/data') + '/';
 
 // Header / mobile nav shared by the tools and stories sites. `current` marks this site's entry,
 // which is rendered as an in-app link to "/".
