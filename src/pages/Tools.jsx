@@ -23,9 +23,9 @@ const CARDS = [
   {
     themes: ['WEATHER', 'WATER'],
     themeLabel: 'WEATHER, WATER',
-    title: 'Weather Dashboard',
-    link: 'https://weather.hyderabad.urbanobservatory.in/',
-    description: 'Current and recent weather across Hyderabad: rainfall, temperature and other readings from weather stations around the city.',
+    title: 'Weather and air',
+    link: 'https://hyderabad.urbanobservatory.in/live/weather/',
+    description: 'Temperature, heat index, humidity, rain, air quality and wind across HMDA: today, since February, against normal, and station by station.',
   },
   {
     themes: ['ACCESSIBILITY', 'DEMOGRAPHICS'],
