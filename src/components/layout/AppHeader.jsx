@@ -36,6 +36,7 @@ export default function AppHeader({ current }) {
         <span className="obs-logo"><Logo /></span><span className="obs-word">Hyderabad Urban Observatory</span>
       </a>
       <nav className="obs-nav" aria-label="Observatory">{links}</nav>
+      {(() => { const l = SITE_NAV.find((n) => n.key === 'live'); return l && <a href={l.href} rel="noopener" className="obs-live obs-live-bar"><i className="obs-live-dot" aria-hidden="true" />{l.label}</a>; })()}
       <button type="button" ref={burgerRef} className="obs-burger" aria-label="Menu" aria-expanded={open}
         aria-controls="obs-menu" onClick={() => setOpen((o) => !o)}><span /></button>
       {open && <nav className="obs-menu" id="obs-menu" ref={menuRef} aria-label="Observatory">{links}</nav>}
