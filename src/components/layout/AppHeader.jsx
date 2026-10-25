@@ -24,9 +24,11 @@ export default function AppHeader({ current }) {
     return () => { document.removeEventListener('keydown', onKey); document.removeEventListener('pointerdown', onDown); };
   }, [open]);
 
+  // "Live" (the main site's live page) carries a pulsing dot
+  const text = (key, label) => (key === 'live' ? <><i className="obs-live-dot" aria-hidden="true" />{label}</> : label);
   const links = SITE_NAV.map(({ key, label, href }) => (key === current
-    ? <Link key={key} to="/" aria-current="page">{label}</Link>
-    : <a key={key} href={href} rel="noopener">{label}</a>));
+    ? <Link key={key} to="/" aria-current="page">{text(key, label)}</Link>
+    : <a key={key} href={href} rel="noopener" className={key === 'live' ? 'obs-live' : undefined}>{text(key, label)}</a>));
 
   return (
     <header className="obs-header">

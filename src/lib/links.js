@@ -23,6 +23,7 @@ export const DATA_URL = trim(import.meta.env.VITE_DATA_URL || 'https://hyderabad
 // Header / mobile nav shared by the tools and stories sites. `current` marks this site's entry,
 // which is rendered as an in-app link to "/".
 export const SITE_NAV = [
+  { key: 'live', label: 'Live', href: SITE_URL + '/live/' },
   { key: 'layers', label: 'Layers', href: MAPS_URL + '/' },
   { key: 'tools', label: 'Tools', href: TOOLS_URL },
   { key: 'stories', label: 'Stories', href: STORIES_URL },
