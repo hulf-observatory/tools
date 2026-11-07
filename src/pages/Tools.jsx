@@ -31,7 +31,7 @@ const CARDS = [
     themes: ['ACCESSIBILITY', 'DEMOGRAPHICS'],
     themeLabel: 'ACCESSIBILITY, DEMOGRAPHICS',
     title: 'Accessibility Atlas',
-    link: 'https://access.hyderabad.urbanobservatory.in',
+    link: 'https://hyderabad.urbanobservatory.in/access/',
     description: 'How far can you get on foot along Hyderabad\'s streets? Explore walking reach to schools, parks, toilets and bus and metro stops from any point, compare wards across the city, and see which stops serve the most people.',
   },
   {
