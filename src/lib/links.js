@@ -27,6 +27,7 @@ export const SITE_NAV = [
   { key: 'layers', label: 'Layers', href: MAPS_URL + '/' },
   { key: 'tools', label: 'Tools', href: TOOLS_URL },
   { key: 'stories', label: 'Stories', href: STORIES_URL },
+  { key: 'contribute', label: 'Contribute', href: SITE_URL + '/contribute/' },
   { key: 'data', label: 'Data sources', href: DATA_URL },
   { key: 'about', label: 'About', href: SITE_URL + '/about' },
 ];
