@@ -99,7 +99,7 @@ export default function Tools() {
             <p>{card.description}</p>
             <p style={{ marginTop: 16 }}>
               <a href={card.link} rel="noopener" style={{ fontWeight: 500 }}>
-                Click here to explore &rarr;
+                Explore<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{ marginLeft: 6, verticalAlign: -2 }}><path d="M7 17 17 7M8 7h9v9" /></svg>
               </a>
             </p>
           </ExpandableCard>
