@@ -38,7 +38,7 @@ const CARDS = [
     themes: ['WATER', 'FLOODS'],
     themeLabel: 'FLOODS, WATER',
     title: 'Report Floods in Hyderabad',
-    link: 'https://floodreport.hyderabad.urbanobservatory.in',
+    link: 'https://hyderabad.urbanobservatory.in/contribute/flood/',
     description: 'Report waterlogging and flood events across Hyderabad in real time. Citizen reports are mapped as they come in, building a ground-level record of where and how flooding affects the city.',
   },
   {
