@@ -45,7 +45,7 @@ const CARDS = [
     themes: ['WATER', 'TERRAIN', 'FLOODS'],
     themeLabel: 'WATER, TERRAIN, FLOODS',
     title: 'Lake Atlas — Watershed Explorer',
-    link: 'https://lakeatlas.hyderabad.urbanobservatory.in',
+    link: 'https://hyderabad.urbanobservatory.in/lakes/',
     description: 'Explore the watershed structure of ~3,500 HMDA lakes. Click any lake to trace its catchment, upstream drainage network, daily rainfall history, and rooftop harvest potential. Click any point to follow where water flows.',
   },
   {
